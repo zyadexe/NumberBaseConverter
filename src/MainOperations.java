@@ -2,32 +2,14 @@ import java.util.Scanner;
 
 public class MainOperations {
     
-    //*This method will show the menu
-    static void MENU(){
-        System.out.println("\n1/Binary\n2/Octal\n3/Decimal\n4/Hexadecimal");
-    }
-    
-    //*This method will show an error message
-    static void ERROR(){
-        System.out.println("\nERROR! , Please enter a valid number");
-
-    }
-    //*This method will check user choices input
-    static void Checker(Scanner CheckerInput){
-        while ((choice<=0)||(choice>4)) {
-            /*If the user enters a number less than or equal to 0 or number that is more than 4
-            the app will show an error by ERROR method*/
-            ERROR();
-            //then , The app will call SetChoice method again 
-            SetChoice(CheckerInput);
-             }
-    }
-
     //Choice number
-    public static int choice;
-    
-    //*This method will make user choose between choices
-    public static void SetChoice(Scanner ChoiceInput){
+     public static int choice;
+
+     
+    //*This method will show the menu and make user choose between choices
+    static void SetChoice(Scanner ChoiceInput){
+        System.out.println("\n1/Binary\n2/Octal\n3/Decimal\n4/Hexadecimal");
+
         System.out.print("\nChoice:");
         choice =ChoiceInput.nextInt();
 
@@ -46,6 +28,27 @@ public class MainOperations {
         }
     }
     
+    
+    //*This method will show an error message
+    static void ERROR(){
+        System.out.println("\ninvalid input , try again");
+
+    }
+    
+    
+    //*This method will check user choices input
+    static void Checker(Scanner CheckerInput){
+        while ((choice<=0)||(choice>4)) {
+            /*If the user enters a number less than or equal to 0 or number that is more than 4
+            the app will show an error by ERROR method*/
+            ERROR();
+            //then , The app will call SetChoice method again 
+            SetChoice(CheckerInput);
+             }
+    }
+
+
+    
     //*This method will ask the user
     static void InputAsk(int ask){
         if (ask == 2) {
@@ -62,6 +65,8 @@ public class MainOperations {
         }
     
     }
+
+
     //*Answer : will use Special methods for each Base
     static void Answer(String num , int Base){
         if (Base == 2) {
@@ -88,8 +93,9 @@ public class MainOperations {
     }
     
     
+    
+    //*DECIMAL will take number and the base and will convert to decimal
     static int DECIMAL(String num , int Base){
-        //DECIMAL will take number and the base and will convert to decimal
         int DECIMAL = Integer.parseInt(num,Base);
         return DECIMAL;
     }

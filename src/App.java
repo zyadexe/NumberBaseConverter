@@ -7,8 +7,6 @@ public class App extends MainOperations {
         
         //show the menu choices in terminal
         System.out.println("Welcome to NumberBaseConvertor");
-        //MENU:will show the choices
-        MENU();
        
         //take input from the user
        Scanner MainInput = new Scanner(System.in);

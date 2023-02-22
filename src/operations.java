@@ -71,10 +71,14 @@ public class operations extends MainOperations{
   
     }
 
+
+
+
+
 //Output operations
 
 
-    //from any base to Binary
+    //?from any base to Binary
     static void ToBin(String Num , int Base){
 
     //ToBin will convert Decimal number to binary
@@ -84,7 +88,7 @@ public class operations extends MainOperations{
     }
 
 
-    //from any base to octal 
+    //?from any base to octal 
     static void ToOct(String Num , int Base){
     
     //ToOct will convert Decimal number to octal
@@ -93,14 +97,14 @@ public class operations extends MainOperations{
     System.out.println("\nOctal: "+ToOct);
     }
 
-    //from any base to decimal
+    //?from any base to decimal
     static void ToDec(String Num , int Base){
     int ToDec = DECIMAL(Num, Base);
     //sout will print decimal number
     System.out.println("\nDecimal: "+ToDec);
     }
 
-    //from any base to hexadecimal
+    //?from any base to hexadecimal
     static void ToHex(String Num , int Base){
 
     //ToHex will convert decimal numbers to hexadecimal
