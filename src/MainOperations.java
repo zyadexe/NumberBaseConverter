@@ -28,14 +28,6 @@ public class MainOperations {
         }
     }
     
-    
-    //*This method will show an error message
-    static void ERROR(){
-        System.out.println("\ninvalid input , try again");
-
-    }
-    
-    
     //*This method will check user choices input
     static void Checker(Scanner CheckerInput){
         while ((choice<=0)||(choice>4)) {
@@ -44,11 +36,9 @@ public class MainOperations {
             ERROR();
             //then , The app will call SetChoice method again 
             SetChoice(CheckerInput);
-             }
-    }
+            }
+        }
 
-
-    
     //*This method will ask the user
     static void InputAsk(int ask){
         if (ask == 2) {
@@ -65,7 +55,6 @@ public class MainOperations {
         }
     
     }
-
 
     //*Answer : will use Special methods for each Base
     static void Answer(String num , int Base){
@@ -92,6 +81,11 @@ public class MainOperations {
         
     }
     
+    //*This method will show an error message
+    static void ERROR(){
+        System.out.println("\ninvalid input , try again");
+
+    }
     
     
     //*DECIMAL will take number and the base and will convert to decimal
