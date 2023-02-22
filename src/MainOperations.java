@@ -33,7 +33,7 @@ public class MainOperations {
         while ((choice<=0)||(choice>4)) {
             /*If the user enters a number less than or equal to 0 or number that is more than 4
             the app will show an error by ERROR method*/
-            ERROR();
+            operations.ERROR();
             //then , The app will call SetChoice method again 
             SetChoice(CheckerInput);
             }
@@ -81,11 +81,7 @@ public class MainOperations {
         
     }
     
-    //*This method will show an error message
-    static void ERROR(){
-        System.out.println("\ninvalid input , try again");
-
-    }
+ 
     
     
     //*DECIMAL will take number and the base and will convert to decimal

@@ -114,4 +114,11 @@ public class operations extends MainOperations{
     }
 
 
+
+
+       //*This method will show an error message
+       static void ERROR(){
+        System.out.println("\ninvalid input , try again");
+
+    }
 }
